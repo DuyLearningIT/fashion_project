@@ -1,4 +1,7 @@
 asgiref==3.11.1
 Django==5.2.11
 django-restframework==0.0.1
+pillow==12.1.0
+psycopg==3.3.2
 sqlparse==0.5.5
+typing_extensions==4.15.0

@@ -1,0 +1,11 @@
+# This one is defined for creating the new Postgres container using docker-compose.
+services:
+  db:
+    image: postgres:15
+    container_name: fashion_db
+    environment:
+      POSTGRES_DB: fashion
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+    ports:
+      - "5555:5432"
