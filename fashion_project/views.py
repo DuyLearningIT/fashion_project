@@ -5,4 +5,4 @@ from rest_framework.decorators import api_view
 
 @api_view(['GET'])
 def home_page(request):
-    return Response({"message": "Welcome to Fashion Website"})
+    return Response({"message": "Welcome to Fashion Website designed by NQD!"})

@@ -11,7 +11,7 @@ class Review(models.Model):
     product = models.ForeignKey(
         "products.Product", on_delete=models.CASCADE, related_name="reviews")
 
-    rating = models.PositiveSmallIntegerField()  # 1 → 5 stars
+    rating = models.FloatField()  # 1 → 5 stars
     comment = models.TextField(blank=True)
 
     is_approved = models.BooleanField(default=False)
