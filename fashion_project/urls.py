@@ -33,6 +33,7 @@ urlpatterns = [
     path('common/', include("common.urls")),
     path('addresses/', include("address.urls")),
     path('reviews/', include("reviews.urls")),
+    path('', include("orders.urls")),
     path("api/schema/", SpectacularAPIView.as_view(),
          name="schema"),  # raw schema
     path("api/docs/", SpectacularSwaggerView.as_view(url_name="schema"),

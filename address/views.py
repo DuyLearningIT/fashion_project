@@ -7,6 +7,6 @@ class AddressViewSet(ModelViewSet):
     queryset = Address.objects.all()
     serializer_class = AddressSerializer
 
-    def get_queryset(self):
-        user = self.request.user
-        return Address.objects.filter(user=user)
+    # def get_queryset(self):
+    #     user = self.request.user
+    #     return Address.objects.filter(user=user)
